@@ -1375,6 +1375,12 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x86de55f7261f774cdf7633c92c118321c655fec4",
+      "transactionHash": "0x51244e99301b675192f380e0f1e65a559bb681cfbf2adf64ec3bdca58352a168"
+    },
     "1642175213894": {
       "events": {},
       "links": {},
@@ -1384,10 +1390,16 @@
     "1642262503897": {
       "events": {},
       "links": {},
-      "address": "0xfeecff2cb7d6f3bfcbe5fa41c49c8fb642f2ddbf",
-      "transactionHash": "0x61e8032a37d1ab48a6ced42cf45b5204df07a13dfae04cc81424eefbc72dc7a9"
+      "address": "0xd5b4fc545dcd14831a6cf5c1c55cad1f89e51a1f",
+      "transactionHash": "0xf9f3d4d624ed809cecd925613d1b296c177d42f8b71b59c1f3e7b8a881f843c4"
+    },
+    "1642283998603": {
+      "events": {},
+      "links": {},
+      "address": "0xf2ee0b0cdcae5013930b92c0ba54f7f7f1933613",
+      "transactionHash": "0xf9f09353c2703af577f0138e4bc380ccc6bd0b67d957eacadeac0c3389419470"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2022-01-15T16:01:58.808Z"
+  "updatedAt": "2022-01-15T22:08:57.625Z"
 }
