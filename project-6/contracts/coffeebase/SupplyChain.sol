@@ -1,10 +1,19 @@
 pragma solidity ^0.4.24;
 
+import "../coffeeaccesscontrol/FarmerRole.sol";
+import "../coffeeaccesscontrol/DistributorRole.sol";
 import "../coffeeaccesscontrol/RetailerRole.sol";
 import "../coffeeaccesscontrol/ConsumerRole.sol";
+import "../coffeecore/Ownable.sol";
 
 // Define a contract 'Supplychain'
-contract SupplyChain is RetailerRole, ConsumerRole {
+contract SupplyChain is
+    Ownable,
+    FarmerRole,
+    DistributorRole,
+    RetailerRole,
+    ConsumerRole
+{
     // Define 'owner'
     address owner;
 
@@ -163,7 +172,7 @@ contract SupplyChain is RetailerRole, ConsumerRole {
         string _originFarmLatitude,
         string _originFarmLongitude,
         string _productNotes
-    ) public {
+    ) public onlyFarmer {
         // Add the new item as part of Harvest
         items[_upc].upc = _upc;
         items[_upc].sku = sku;
@@ -226,6 +235,7 @@ contract SupplyChain is RetailerRole, ConsumerRole {
         public
         payable
         forSale(_upc)
+        onlyDistributor
         paidEnough(items[_upc].productPrice)
         checkValue(_upc)
     {
@@ -273,6 +283,7 @@ contract SupplyChain is RetailerRole, ConsumerRole {
         public
         received(_upc)
         onlyConsumer
+        checkValue(0)
     {
         // Update the appropriate fields - ownerID, consumerID, itemState
         items[_upc].ownerID = _consumerID;

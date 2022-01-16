@@ -47,6 +47,18 @@ contract('SupplyChain', function(accounts) {
         supplyChain = await SupplyChain.deployed();
     })
 
+    // Test Zero
+    it("Add properly one role", async () => {
+        var eventEmitted = false
+        var event = supplyChain.DistributorAdded()
+        await event.watch((err, res) => {
+            eventEmitted = true
+        })
+        await supplyChain.addDistributor(distributorID);
+        assert.equal(await supplyChain.isDistributor(distributorID), true, "Error: Distributor is not registred")
+        assert.equal(eventEmitted, true, 'Invalid event emitted')
+    })
+
     // 1st Test
     it("Testing smart contract function harvestItem() that allows a farmer to harvest coffee", async() => {
         // Declare and Initialize a variable for event

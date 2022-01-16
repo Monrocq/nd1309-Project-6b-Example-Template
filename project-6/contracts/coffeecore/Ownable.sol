@@ -8,13 +8,13 @@ contract Ownable {
     event TransferOwnership(address indexed oldOwner, address indexed newOwner);
 
     /// Assign the contract to an owner
-    constructor () internal {
+    constructor() internal {
         origOwner = msg.sender;
         emit TransferOwnership(address(0), origOwner);
     }
 
     /// Look up the address of the owner
-    function owner() public view returns (address) {
+    function getOwner() public view returns (address) {
         return origOwner;
     }
 

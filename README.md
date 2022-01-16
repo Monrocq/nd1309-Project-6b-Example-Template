@@ -4,43 +4,17 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 
 ---
 
-##### Deploiment logs (contracts address) :
+##### Write-Up:
 
-> Using network 'rinkeby'.
+- Rinkeby contract address : `0x56127d6c1a7df30baf066ab53ac60091f0aa344c`
+- Rinkeby transaction creation id : 0x5eab8638d8d216b871530e176d4de30d8734853dd57dc8b72aefa26594e2e7f4
 
-> Running migration: 1_initial_migration.js
-> Replacing Migrations...
-> ... 0x022b5de79395d340de3d9cca360c5b1096554923f0f083a4521b7d8a60603ae5
-> Migrations: 0xed069be7deae5ff79597b15c3dd2cf9cf9f1e29b
-> Saving successful migration to network...
-> ... 0xb9abd2f9a912baf783d803e9b066eaa1fee3eab40492aeca887107dd4dd09f65
-> Saving artifacts...
-> Running migration: 2_deploy_contracts.js
-> Replacing FarmerRole...
-> ... 0xfe56c9512d18cb11685dcca6b36f27707a5e37e4b6ce46f1b7baf3ec91da04cd
-> FarmerRole: 0x38fea39a12c9616090ea84b42636d8fab54403ea
-> Replacing DistributorRole...
-> ... 0x37d0996b09b93cf099c43985d647bcffd4b7bc8987b1d7cf22876bb824fa86a5
-> DistributorRole: 0xc4c3631b001c04f511f8804d8936b35484485bbb
-> Replacing RetailerRole...
-> ... 0x910ae567a65a504bbe8e1c6b3f3d95c3ee40387c573e1c7922c716ac17b487f9
-> RetailerRole: 0x59ec762103d2e916e4bac893d727b6b0cdc06767
-> Replacing ConsumerRole...
-> ... 0x610ac0d721f289e1251e2076681173aea9c807c03da3759ff1737d5db61ff1c8
-> ConsumerRole: 0x9eba5fb4d6b441ff7cf1dc0c37a5155843f23d7b
-> Replacing SupplyChain...
-> ... 0xcdc02d941a57041388521754bf236039baf0c2fe24035c6aaa3c16cac0ad8c70
-> SupplyChain: 0x34357512f33d572197ef4dfa14c0b1596932c772
-> Saving successful migration to network...
-> ... 0x856bb432d4a61648a4cbf4b7d0ea26c3061d901745a8b4618e950250d5e534d2
-> Saving artifacts...
-
-- Librairie used : `truffle-hdwallet-provider` --> Provide my wallet to deploy the smart contract
-- Program version number :
+* Librairie used : `truffle-hdwallet-provider` --> Provide my wallet to deploy the smart contract
+* Program version number :
   - Truffle v4.1.14 (core: 4.1.14)
   - Solidity v0.4.24 (solc-js)
-- Node version : `v14.17.6`
-- Web 3 version : `"web3": "^1.3.5"`
+* Node version : `v14.17.6`
+* Web 3 version : `"web3": "^1.3.5"`
 
 ---
 
